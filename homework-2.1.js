@@ -31,22 +31,22 @@ function getPrimeNumbersList(nubmersCount) {
 
 
 function main() {
-  let nubmersCount = process.argv[2];
+  let numbersCount = process.argv[2];
 
-  if(nubmersCount == undefined) {
+  if(numbersCount == undefined) {
       console.log("undefined numbers count");
       return;
   }
 
-  nubmersCount = parseInt(nubmersCount)
-  if(isNaN(nubmersCount)) {
+  numbersCount = parseInt(numbersCount)
+  if(isNaN(numbersCount)) {
       console.log("numbers count not number");
       return;
   }
 
-  primeNubmers = getPrimeNumbersList(nubmersCount);
+  primeNumbers = getPrimeNumbersList(nubmersCount);
 
-  console.log(primeNubmers);
+  console.log(primeNumbers);
 }
 
 main();
